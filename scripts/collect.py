@@ -24,7 +24,7 @@ from diluri_sim import configure_runtime
 configure_runtime()
 
 from diluri_sim.config import load_dual_fr3_config
-from diluri_sim.env import build_scene, build_controller
+from diluri_sim.sim import build_scene, build_controller
 from diluri_sim.dataset import ReplayBuffer
 
 ARM_DOFS = 7

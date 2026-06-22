@@ -23,7 +23,7 @@ Two Franka Research 3 arms operate in a shared workspace: one manipulates an ult
 ├── src/
 │   └── diluri_sim/
 │       ├── config.py               # YAML config dataclasses + loaders
-│       ├── env/                    # Genesis simulation (scene, controllers)
+│       ├── sim/                    # Genesis simulation (scene, controllers)
 │       ├── policy/                 # Diffusion Policy (network, scheduler, inference)
 │       └── dataset/                # Replay buffer for demonstration storage
 └── tests/

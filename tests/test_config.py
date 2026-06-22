@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from diluri_sim.config import ControllerConfig, load_dual_fr3_config
-from diluri_sim.env.controllers import (
+from diluri_sim.sim.controllers import (
     PositionController,
     VelocityController,
     CartesianController,

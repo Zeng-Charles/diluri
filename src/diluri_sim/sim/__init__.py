@@ -1,5 +1,5 @@
-from diluri_sim.env.scene import build_scene
-from diluri_sim.env.controllers import (
+from diluri_sim.sim.scene import build_scene
+from diluri_sim.sim.controllers import (
     RobotController,
     PositionController,
     VelocityController,
