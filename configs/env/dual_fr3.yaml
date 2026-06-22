@@ -1,0 +1,39 @@
+scene:
+  dt: 0.01
+  substeps: 4
+  viewer: true
+  backend: cpu
+  camera:
+    pos: [1.8, -2.2, 1.4]
+    lookat: [0.0, 0.0, 0.45]
+    fov: 45
+  horizon_steps: 10000
+
+robots:
+  left_probe_arm:
+    role: ultrasound_probe
+    asset: assets/robots/franka_fr3/fr3.urdf
+    base_pos: [-0.45, 0.0, 0.0]
+    base_euler: [0.0, 0.0, 0.0]
+    fixed_base: true
+    home_q: [0.0, -0.7854, 0.0, -2.3562, 0.0, 1.5708, 0.7854]
+    controller:
+      type: position
+      # kp, kv, force_limits are optional; defaults from PositionController are used if omitted
+      kp: [4500, 4500, 3500, 3500, 2000, 2000, 2000]
+      kv: [450, 450, 350, 350, 200, 200, 200]
+      force_limits: [87, 87, 87, 87, 12, 12, 12]
+  right_needle_arm:
+    role: needle
+    asset: assets/robots/franka_fr3/fr3.urdf
+    base_pos: [0.45, 0.0, 0.0]
+    base_euler: [0.0, 0.0, 3.141592653589793]
+    fixed_base: true
+    home_q: [0.0, -0.7854, 0.0, -2.3562, 0.0, 1.5708, 0.7854]
+    controller:
+      type: position
+      # kp, kv, force_limits are optional; defaults from PositionController are used if omitted
+      kp: [4500, 4500, 3500, 3500, 2000, 2000, 2000]
+      kv: [450, 450, 350, 350, 200, 200, 200]
+      force_limits: [87, 87, 87, 87, 12, 12, 12]
+

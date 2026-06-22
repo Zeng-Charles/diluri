@@ -1,0 +1,28 @@
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+/env/
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code session files
+.claude/
+
+# OS
+.DS_Store
+
+# Runtime artifacts — do not commit replay buffers or checkpoints
+data/
+checkpoints/
+*.pkl
+*.pt

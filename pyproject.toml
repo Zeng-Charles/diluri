@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diluri-sim"
+version = "0.1.0"
+description = "Genesis simulation scaffold for dual-arm ultrasound-guided robotic intervention research."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "genesis-world>=1.0.0",
+    "PyYAML>=6.0",
+    "torch>=2.0",
+    "numpy>=1.24",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "-p",
+    "no:launch_testing",
+]
