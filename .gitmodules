@@ -1,3 +1,0 @@
-[submodule "assets/robots/franka_fr3/franka_description"]
-	path = assets/robots/franka_fr3/franka_description
-	url = https://github.com/frankarobotics/franka_description.git
